@@ -192,7 +192,7 @@ export default function ContactPage() {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD63UcGtr-cA3TJ9rwhTCA7YJio1DXQ_0A=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
+          src={`https://www.google.com/maps/embed/v1/AIzaSyD63UcGtr-cA3TJ9rwhTCA7YJio1DXQ_0A&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
           title="Legal Wisdom Hub Map"
         ></iframe>
 
