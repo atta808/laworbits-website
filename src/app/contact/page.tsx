@@ -187,7 +187,7 @@ export default function ContactPage() {
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
           // 👇 UPDATED: This is the correct official URL format
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD63UcGtr-cA3TJ9rwhTCA7YJio1DXQ_0A&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyCMOaDX3d3KtaGazXnVzX7SMPBBbgUPGnQ&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
           title="Legal Wisdom Hub Map"
         ></iframe>
 
