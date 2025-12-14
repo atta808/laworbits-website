@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact LawOrbits | Advocate Atta Ur Rehman Dhothar",
   description:
-    "Contact the law chambers of Atta Ur Rehman Dhothar. Located at Legal Wisdom Hub, District Judicial Complex, Mandi Bahauddin.",
+    "Contact the law chambers of Atta Ur Rehman Dhothar in Mandi Bahauddin. WhatsApp Consultation available for Overseas Pakistanis.",
 };
 
 export default function ContactPage() {
@@ -85,7 +85,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* CARD 2: Office Location (UPDATED) */}
+          {/* CARD 2: Office Location */}
           <div className="bg-white p-8 shadow-xl border-t-4 border-richBlack">
             <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
               <MapPin className="text-richBlack w-6 h-6" />
@@ -98,11 +98,8 @@ export default function ContactPage() {
             </p>
 
             <address className="not-italic text-gray-600 space-y-2 mb-6">
-              <p className="font-bold text-richBlack text-lg">
-                Legal Wisdom Hub
-              </p>
-              <p className="font-medium text-richBlack">Chamber No. 25/60</p>
-              <p>District Judicial Complex</p>
+              <p className="font-bold text-richBlack">Chamber No. 49-50</p>
+              <p>District Courts / Katchery</p>
               <p>Mandi Bahauddin, Punjab</p>
               <p>Pakistan, 50400</p>
             </address>
@@ -164,6 +161,7 @@ export default function ContactPage() {
                 <Instagram size={18} />{" "}
                 <span className="text-sm font-bold">Instagram</span>
               </a>
+              {/* TikTok Link (Using generic icon as specific one varies in libraries, styled for TikTok) */}
               <a
                 href="https://tiktok.com/@technaam"
                 target="_blank"
@@ -177,33 +175,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. GOOGLE MAP EMBED (Official API Integration) */}
+      {/* 3. GOOGLE MAP EMBED */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
-        {/* INSTRUCTIONS FOR CLIENT:
-            1. Replace 'YOUR_API_KEY_HERE' with your Google Maps JavaScript API Key.
-            2. Replace 'YOUR_PLACE_ID_HERE' with your specific Place ID.
-            
-            This embed format (v1/place) is required to show the "Reviews Card" with your 4.9 Rating.
-        */}
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.637568553644!2d73.48666531512497!3d32.58597398102874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fdf6360c73205%3A0x66487fb6f6259461!2sDistrict%20Courts%20Mandi%20Bahauddin!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
           width="100%"
           height="100%"
           style={{ border: 0 }}
+          allowFullScreen={true}
           loading="lazy"
-          allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY_HERE&q=place_id:YOUR_PLACE_ID_HERE`}
-          title="Legal Wisdom Hub Map"
+          title="LawOrbits Office Map"
         ></iframe>
 
-        {/* Map Overlay Label (Visual Fallback) */}
-        <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block z-10">
-          <p className="font-bold text-richBlack text-lg">Legal Wisdom Hub</p>
-          <p className="text-sm text-gray-500">District Judicial Complex</p>
-          <div className="flex items-center gap-2 mt-2">
-            <span className="text-gold-500 font-bold text-sm">★ 4.9</span>
-            <span className="text-gray-400 text-xs">(1.1K+ Views)</span>
-          </div>
+        {/* Map Overlay Label */}
+        <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block">
+          <p className="font-bold text-richBlack text-lg">District Courts</p>
+          <p className="text-sm text-gray-500">Mandi Bahauddin</p>
         </div>
       </section>
 
