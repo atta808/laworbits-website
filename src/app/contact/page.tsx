@@ -175,27 +175,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. GOOGLE MAP EMBED (Official Fixed Code) */}
+      {/* 3. GOOGLE MAP EMBED */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
         <iframe
+          src="https://maps.google.com/maps?q=Atta+Ur+Rehman+Dhothar+Advocate+High+Court+Mandi+Bahauddin&t=&z=15&ie=UTF8&iwloc=&output=embed"
           width="100%"
           height="100%"
           style={{ border: 0 }}
+          allowFullScreen={true}
           loading="lazy"
-          allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD9xQ0dULAewJLv7lhgxXrur5Ook2sHpYc&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
-          title="Legal Wisdom Hub Map"
+          title="LawOrbits Office Map"
         ></iframe>
 
         {/* Map Overlay Label */}
-        <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block z-10">
-          <p className="font-bold text-richBlack text-lg">Legal Wisdom Hub</p>
-          <p className="text-sm text-gray-500">District Judicial Complex</p>
-          <div className="flex items-center gap-2 mt-2">
-            <span className="text-gold-500 font-bold text-sm">★ 4.9</span>
-            <span className="text-gray-400 text-xs">(1.1K+ Views)</span>
-          </div>
+        <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block">
+          <p className="font-bold text-richBlack text-lg">District Courts</p>
+          <p className="text-sm text-gray-500">Mandi Bahauddin</p>
         </div>
       </section>
 
