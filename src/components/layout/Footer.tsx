@@ -58,7 +58,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://draftdeskhub.com"
+                  href="https://www.draftdeskhub.com"
                   target="_blank"
                   className="hover:text-gold-500 transition flex items-center"
                 >
@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://technaam.com"
+                  href="https://www.technaam.com/"
                   target="_blank"
                   className="hover:text-gold-500 transition flex items-center"
                 >
