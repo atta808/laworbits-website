@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // ✅ 1. Animation added correctly here
+      animation: {
+        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+
+      // ✅ 2. Your Colors
       colors: {
         gold: {
           400: "#E5C558",
@@ -18,6 +24,8 @@ const config: Config = {
         richBlack: "#050505",
         charcoal: "#1A1A1A",
       },
+
+      // ✅ 3. Your Fonts
       fontFamily: {
         serif: ["var(--font-playfair)", "serif"],
         sans: ["var(--font-inter)", "sans-serif"],
