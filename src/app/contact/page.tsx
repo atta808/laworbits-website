@@ -177,14 +177,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. GOOGLE MAP EMBED (Official API Integration) */}
+      {/* 3. GOOGLE MAP EMBED (Official Fixed Code) */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
-        {/* INSTRUCTIONS FOR CLIENT:
-            1. Replace 'YOUR_API_KEY_HERE' with your Google Maps JavaScript API Key.
-            2. Replace 'YOUR_PLACE_ID_HERE' with your specific Place ID.
-            
-            This embed format (v1/place) is required to show the "Reviews Card" with your 4.9 Rating.
-        */}
         <iframe
           width="100%"
           height="100%"
@@ -192,11 +186,12 @@ export default function ContactPage() {
           loading="lazy"
           allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          src={`https://www.google.com/maps/embed/v1/AIzaSyD63UcGtr-cA3TJ9rwhTCA7YJio1DXQ_0A&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
+          // 👇 UPDATED: This is the correct official URL format
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD63UcGtr-cA3TJ9rwhTCA7YJio1DXQ_0A&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
           title="Legal Wisdom Hub Map"
         ></iframe>
 
-        {/* Map Overlay Label (Visual Fallback) */}
+        {/* Map Overlay Label */}
         <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block z-10">
           <p className="font-bold text-richBlack text-lg">Legal Wisdom Hub</p>
           <p className="text-sm text-gray-500">District Judicial Complex</p>
