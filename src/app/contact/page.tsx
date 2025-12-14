@@ -178,9 +178,7 @@ export default function ContactPage() {
       {/* 3. GOOGLE MAP EMBED */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.637568553644!2d73.48666531512497!3d32.58597398102874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fdf6360c73205%3A0x66487fb6f6259461!2sDistrict%20Courts%20Mandi%20Bahauddin!5e0!3m2!1sen!2s!4v1620000000000!5m2!1sen!2s"
-          width="100%"
-          height="100%"
+          src="https://www.google.com/maps/place/Atta+Ur+Rehman+Dhothar+Advocate+High+Court+@+LawOrbits.com/@32.5442349,73.4767743,15z/data=!4m14!1m7!3m6!1s0x391f7d9155555555:0xf0a711d6eaa8400!2sAtta+Ur+Rehman+Dhothar+Advocate+High+Court+@+LawOrbits.com!8m2!3d32.5448861!4d73.480626!16s%2Fg%2F11f53g54bh!3m5!1s0x391f7d9155555555:0xf0a711d6eaa8400!8m2!3d32.5448861!4d73.480626!16s%2Fg%2F11f53g54bh?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
           style={{ border: 0 }}
           allowFullScreen={true}
           loading="lazy"
