@@ -161,7 +161,7 @@ export default function ContactPage() {
                 <Instagram size={18} />{" "}
                 <span className="text-sm font-bold">Instagram</span>
               </a>
-              {/* TikTok Link (Using generic icon as specific one varies in libraries, styled for TikTok) */}
+              {/* TikTok Link */}
               <a
                 href="https://tiktok.com/@technaam"
                 target="_blank"
@@ -175,10 +175,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. GOOGLE MAP EMBED */}
+      {/* 3. GOOGLE MAP EMBED (Clean - No Overlay) */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
         <iframe
-          src="https://maps.google.com/maps?q=Atta+Ur+Rehman+Dhothar+Advocate+High+Court+Mandi+Bahauddin&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.457816159518!2d73.48062600000001!3d32.54488610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39207d7d55555555%3A0xf6a7dc1d6e8aa40!2sAtta%20Ur%20Rehman%20Dhothar%20Advocate%20High%20Court%20%40%20LawOrbits.com!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
           width="100%"
           height="100%"
           style={{ border: 0 }}
@@ -187,12 +187,6 @@ export default function ContactPage() {
           referrerPolicy="no-referrer-when-downgrade"
           title="LawOrbits Office Map"
         ></iframe>
-
-        {/* Map Overlay Label */}
-        <div className="absolute top-10 left-10 bg-white p-4 shadow-lg border-l-4 border-gold-500 max-w-xs hidden md:block">
-          <p className="font-bold text-richBlack text-lg">District Courts</p>
-          <p className="text-sm text-gray-500">Mandi Bahauddin</p>
-        </div>
       </section>
 
       {/* 4. FINAL ECOSYSTEM REMINDER */}
