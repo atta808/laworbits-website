@@ -15,7 +15,7 @@ import {
 export const metadata: Metadata = {
   title: "Contact LawOrbits | Advocate Atta Ur Rehman Dhothar",
   description:
-    "Contact the law chambers of Atta Ur Rehman Dhothar in Mandi Bahauddin. WhatsApp Consultation available for Overseas Pakistanis.",
+    "Contact the law chambers of Atta Ur Rehman Dhothar. Located at Legal Wisdom Hub, District Judicial Complex, Mandi Bahauddin.",
 };
 
 export default function ContactPage() {
@@ -85,7 +85,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          {/* CARD 2: Office Location */}
+          {/* CARD 2: Office Location (UPDATED) */}
           <div className="bg-white p-8 shadow-xl border-t-4 border-richBlack">
             <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mb-6">
               <MapPin className="text-richBlack w-6 h-6" />
@@ -98,8 +98,11 @@ export default function ContactPage() {
             </p>
 
             <address className="not-italic text-gray-600 space-y-2 mb-6">
-              <p className="font-bold text-richBlack">Chamber No. 49-50</p>
-              <p>District Courts / Katchery</p>
+              <p className="font-bold text-richBlack text-lg">
+                Legal Wisdom Hub
+              </p>
+              <p className="font-medium text-richBlack">Chamber No. 25/60</p>
+              <p>District Judicial Complex</p>
               <p>Mandi Bahauddin, Punjab</p>
               <p>Pakistan, 50400</p>
             </address>
@@ -161,7 +164,6 @@ export default function ContactPage() {
                 <Instagram size={18} />{" "}
                 <span className="text-sm font-bold">Instagram</span>
               </a>
-              {/* TikTok Link */}
               <a
                 href="https://tiktok.com/@technaam"
                 target="_blank"
@@ -175,17 +177,18 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* 3. GOOGLE MAP EMBED (Clean - No Overlay) */}
+      {/* 3. GOOGLE MAP EMBED (Official Fixed Code - Clean) */}
       <section className="w-full h-[500px] bg-gray-200 relative grayscale hover:grayscale-0 transition-all duration-700">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.457816159518!2d73.48062600000001!3d32.54488610000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39207d7d55555555%3A0xf6a7dc1d6e8aa40!2sAtta%20Ur%20Rehman%20Dhothar%20Advocate%20High%20Court%20%40%20LawOrbits.com!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
           width="100%"
           height="100%"
           style={{ border: 0 }}
-          allowFullScreen={true}
           loading="lazy"
+          allowFullScreen
           referrerPolicy="no-referrer-when-downgrade"
-          title="LawOrbits Office Map"
+          // 👇 IMPORTANT: PASTE YOUR KEY AND PLACE ID BELOW inside the quotes
+          src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyD9xQ0dULAewJLv7lhgxXrur5Ook2sHpYc&q=place_id:ChIJVVVVVZF9HzkRAISqbh1xCg8`}
+          title="Legal Wisdom Hub Map"
         ></iframe>
       </section>
 
